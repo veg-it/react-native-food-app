@@ -7,10 +7,9 @@ const Detail = ({ navigation }) => {
 
   return (
     <ScrollView
-      contentContainerStyle={{flexGrow: 1}}
+      contentContainerStyle={{ flexGrow: 1 }}
       style={{ flex: 1 }}
-      scrollEnabled={true}
-      >
+      scrollEnabled={true}>
       <View
         style={{
           flex: 1,
@@ -225,16 +224,18 @@ const Detail = ({ navigation }) => {
           showsHorizontalScrollIndicator={false}
           style={{
             marginTop: 20,
-            marginBottom: -200,
             marginHorizontal: -10,
             paddingLeft: 15,
+            marginBottom: 50,
           }}>
           <View
             style={{
               width: 130,
               height: 50,
               borderRadius: 30,
+              marginRight: 20,
               display: 'flex',
+              flexDirection: 'row',
               alignItems: 'center',
               justifyContent: 'center',
               backgroundColor: '#fff',
@@ -248,6 +249,27 @@ const Detail = ({ navigation }) => {
               shadowOpacity: 0.05,
               shadowRadius: 40.0,
             }}>
+            <View style={{
+              width: 34,
+              height: 34,
+              borderRadius: 50,
+              backgroundColor: '#fff',
+              // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+              elevation: 1,
+              shadowColor: 'rgb(0,0,0)',
+              shadowOffset: {
+                width: 0,
+                height: 0
+              },
+              shadowRadius: 10.00,
+              shadowOpacity: 0.1,
+              marginRight: 10,
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <Image source={require('../images/star.png')} style={{height: 20, width: 20}} />
+            </View>
             <Text
               style={{
                 fontWeight: '400',
@@ -257,23 +279,15 @@ const Detail = ({ navigation }) => {
               Cheese
             </Text>
           </View>
-        </ScrollView>
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={{
-            marginTop: 20,
-            marginBottom: -200,
-            marginHorizontal: -10,
-            paddingLeft: 15,
-          }}>
           <View
             style={{
               width: 130,
               height: 50,
               borderRadius: 30,
+              marginRight: 20,
               display: 'flex',
+              flexDirection: 'row',
               alignItems: 'center',
               justifyContent: 'center',
               backgroundColor: '#fff',
@@ -287,6 +301,79 @@ const Detail = ({ navigation }) => {
               shadowOpacity: 0.05,
               shadowRadius: 40.0,
             }}>
+            <View style={{
+              width: 34,
+              height: 34,
+              borderRadius: 50,
+              backgroundColor: '#fff',
+              // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+              elevation: 1,
+              shadowColor: 'rgb(0,0,0)',
+              shadowOffset: {
+                width: 0,
+                height: 0
+              },
+              shadowRadius: 10.00,
+              shadowOpacity: 0.1,
+              marginRight: 10,
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <Image source={require('../images/star.png')} style={{height: 20, width: 20}} />
+            </View>
+            <Text
+              style={{
+                fontWeight: '400',
+                fontSize: 12,
+                lineHeight: 18,
+              }}>
+              Cheese
+            </Text>
+          </View>
+
+          <View
+            style={{
+              width: 130,
+              height: 50,
+              borderRadius: 30,
+              marginRight: 20,
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: '#fff',
+              //drop-shadow(0px 20px 40px rgba(2, 32, 44, 0.05));
+              elevation: 1,
+              shadowColor: 'rgb(2,32,44)',
+              shadowOffset: {
+                width: 0,
+                height: 20,
+              },
+              shadowOpacity: 0.05,
+              shadowRadius: 40.0,
+            }}>
+            <View style={{
+              width: 34,
+              height: 34,
+              borderRadius: 50,
+              backgroundColor: '#fff',
+              // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+              elevation: 1,
+              shadowColor: 'rgb(0,0,0)',
+              shadowOffset: {
+                width: 0,
+                height: 0
+              },
+              shadowRadius: 10.00,
+              shadowOpacity: 0.1,
+              marginRight: 10,
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <Image source={require('../images/star.png')} style={{height: 20, width: 20}} />
+            </View>
             <Text
               style={{
                 fontWeight: '400',
